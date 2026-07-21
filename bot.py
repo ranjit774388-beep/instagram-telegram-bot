@@ -41,7 +41,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     "outtmpl": os.path.join(temp, "%(id)s.%(ext)s"),
                     "format": "bv*+ba/b",
                     "merge_output_format": "mp4",
-                    "verbose": True,
+                    "quiet": True,
                     "ffmpeg_location": "/usr/bin/ffmpeg",
         }
 
