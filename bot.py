@@ -55,7 +55,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 video=open(filename, "rb")
             )
 
-            await msg.edit_text("✅ Done!")
+            await msg.delete()
 
         except Exception as e:
             await msg.edit_text(f"❌ Error:\n{e}")
