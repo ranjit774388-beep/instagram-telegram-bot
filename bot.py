@@ -39,7 +39,8 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         ydl_opts = {
             "outtmpl": os.path.join(temp, "%(id)s.%(ext)s"),
-            "format": "best",
+            "format": "bestvideo+bestaudio/best",
+            "merge_output_format": "mp4",
             "quiet": True,
         }
 
